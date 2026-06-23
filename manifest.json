@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-okr-tracker",
-  "version": "1.0.0",
-  "description": "OKR & Performance Management — Lattice/15Five/Culture Amp for OKR drafting, progress tracking, quarterly reviews",
+  "version": "1.0.1",
+  "description": "OKR & Performance Management \u2014 Lattice/15Five/Culture Amp for OKR drafting, progress tracking, quarterly reviews",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,7 +9,10 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-okr-tracker",
   "homepage": "https://cortexprism.io/marketplace/plugins/okr-tracker",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
     {
       "name": "okr_draft",
@@ -21,7 +24,11 @@
       "description": "Track OKR progress from integrated tools",
       "params": []
     },
-    { "name": "okr_flag_risks", "description": "Flag at-risk OKRs", "params": [] },
+    {
+      "name": "okr_flag_risks",
+      "description": "Flag at-risk OKRs",
+      "params": []
+    },
     {
       "name": "okr_generate_review",
       "description": "Generate quarterly review summary",
@@ -29,6 +36,13 @@
     }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
